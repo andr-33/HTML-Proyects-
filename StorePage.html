@@ -12,7 +12,7 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <h2 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">Lolos</h2>
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Carrito</a></li>
+            <li class="nav-item"><a href="http://127.0.0.1:5500/TrolleyPage.html" class="btn btn-secondary my-2" aria-current="page">Carrito</a></li>
           </ul>
         </header>
       </div>
@@ -35,70 +35,43 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 <!--Cartas de producto-->
+            <!---->
+            <!--Trajeta de producto-->
             <div class="col">
-              <div class="card shadow-sm">
-                <img src="..." class="card-img-top" alt="No hay imagen xd">
+             <div class="card shadow-sm">
+              <img src="..." class="card-img-top" alt="No hay imagen xd">
+              <div class="card-body">
+                <!--Texto para descripción de la prenda-->
+                <p class="card-text">Aca va la información sobre la prenda.</p>
+                <!--Texto del precio de la prenda-->
+                <small class="text-muted">€ 0,00</small>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!--Boton para agregar al carrito de compras-->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <!--Grupo de botones para la talla de la prenda-->
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <!--Botones correspondiente a cada talla-->
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-sm btn-outline-secondary" for="btnradio1">S</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-secondary" for="btnradio2">M</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-secondary" for="btnradio3">L</label>
 
-                <div class="card-body">
-                  <p class="card-text">Aca va la información sobre la prenda.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                    </div>
-                    <small class="text-muted">€ 0,00</small>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-secondary" for="btnradio4">XL</label>
                   </div>
+                  <!--Fin del grupo de botones de talla-->
                 </div>
               </div>
-            </div>
+             </div>
+            </div><!--Fin de tarjeta-->
 
-            <div class="col">
-                <div class="card shadow-sm">
-                  <img src="..." class="card-img-top" alt="No hay imagen xd">
-  
-                  <div class="card-body">
-                    <p class="card-text">Aca va la información sobre la prenda.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                      </div>
-                      <small class="text-muted">€ 0,00</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            <div class="col">
-                <div class="card shadow-sm">
-                  <img src="..." class="card-img-top" alt="No hay imagen xd">
-  
-                  <div class="card-body">
-                    <p class="card-text">Aca va la información sobre la prenda.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                      </div>
-                      <small class="text-muted">€ 0,00</small>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Ejemplo base</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
 <!--Termina los recuadros de producto-->
 <!-- Div de cierre, cabezeras-->
           </div>
