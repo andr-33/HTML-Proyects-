@@ -6,7 +6,7 @@ $(document).ready(async function() {
 
     let html = '';
     let Artuculos = '';
-    let totalView = ''; 
+    let totalView = '';
     let total = 0;
     let NuArticulos = carrito.length;
     
@@ -36,16 +36,25 @@ $(document).ready(async function() {
             <li class="list-group-item d-flex justify-content-between">
                 <span>Total </span>
                 <strong>€ ${total}</strong>
-            </li>`;
+            </li>
+            <hr/>
+            <a id="clear" class = "btn btn-sm btn-danger">Vaciar carrito</a>
+            `;
 
         })
 
     });
+
     
     $("#cont").html(html);
     $("#numArticulos").html(Artuculos);
     $("#total").html(totalView);
     console.log(total);
+
+    $("#clear").on("click", function(){
+        localStorage.removeItem("productos");
+        location.reload();
+    });
 
     // Tambien hace que el precio del total coincida
 });
