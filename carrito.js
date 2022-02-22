@@ -6,7 +6,7 @@ $(document).ready(async function() {
 
     let html = '';
     let Artuculos = '';
-    let totalView = '';
+    let totalView = ''; 
     let total = 0;
     let NuArticulos = carrito.length;
     
